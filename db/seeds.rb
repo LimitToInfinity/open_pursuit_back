@@ -6,5 +6,15 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Hero.create({name: "Dawg", power: "Freestyle"})
-Hero.create({name: "Citizen", power: "Vote"})
+fists = Weapon.create({name: "fists"})
+chair = Weapon.create({name: "chair"})
+bubble_gun = Weapon.create({name: "bubble gun"})
+
+vote = Power.create({name: "vote"})
+confidence = Power.create({name: "confidence"})
+speak_up = Power.create({name: "speak up"})
+
+citizen = Hero.create({name: "Citizen", weapon: fists})
+
+HeroAttribute.create({hero: citizen, power: vote})
+HeroAttribute.create({hero: citizen, power: confidence})
