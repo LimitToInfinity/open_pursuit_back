@@ -14,7 +14,7 @@ vote = Power.create({name: "vote"})
 confidence = Power.create({name: "confidence"})
 speak_up = Power.create({name: "speak up"})
 
-citizen = Hero.create({name: "Citizen", weapon: fists})
+# citizen = Hero.create({name: "Citizen", weapon: fists})
 
-HeroAttribute.create({hero: citizen, power: vote})
-HeroAttribute.create({hero: citizen, power: confidence})
+# HeroAttribute.create({hero: citizen, power: vote})
+# HeroAttribute.create({hero: citizen, power: confidence})
